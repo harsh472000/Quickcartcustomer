@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>Stripe Payment Demo</title>
+<head>
+	<style>
+				.container {
+					background-color:white;
+					width: 350px;
+					height: 250px;
+					border: 15px solid lightred;
+					margin-top: 210px;
+					margin-left: 550px;
+					}
+					#shadow {
+						border: 1px solid;
+						padding: 10px;
+						box-shadow: 5px 10px #888888;
+						}
+	  </style>
+</head>
+<body>
+	<section class="container" id="shadow">
+		<h2>Welcome to Payment Gateway</h2>
+		<form action="/payment" method="POST">
+			<script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button" data-key="<%= key%>"
+				data-amount="<%= price%>" data-currency="inr" data-name="Quick Cart"
+				data-description="Pay using your Credit/Debit card" data-locale="auto">
+				</script>
+		</form>
+	</section>
+</body>
+
+</html>

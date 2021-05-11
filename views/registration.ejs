@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>Registration Page </title>
+
+  <link rel="stylesheet" type="text/css" href="/sign.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <div class="row">
+          <div class="col-md-5 register-left">
+            <img src="images/logo.png" height="100px" width="100px">
+            <h3>Join Us</h3>
+            <p>Be a part of our family join us earn and grow more
+            </p>
+            <button type="button" class="btn btn-primary">About
+              Us</button>
+          </div>
+          <form class="pt-3" action="/registration" method="post">
+            <div class="register-form">
+              <div class="form-group">
+                <p>User Name</p>
+                <input type="text" name="uname" class="form-control form-control-lg" id="exampleInputUsername1"
+                  placeholder="Username">
+              </div>
+              <div class="form-group">
+                <p>Email Adress</p>
+                <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                  placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <p>Password</p>
+                <input type="password" name="passwd" class="form-control form-control-lg" id="exampleInputPassword1"
+                  placeholder="Password">
+              </div>
+              <div class="form-group">
+                <p>Confirm Password</p>
+                <input type="password" name="confpass" class="form-control form-control-lg" id="exampleInputPassword2"
+                  placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                SignUp
+              </button>
+              <div class="text-center mt-4 font-weight-light">
+                Already have an account? <a href="/login" class="text-primary">..</a>
+              </div>
+            </div>
+
+          </form>
+</body>
+
+</html>
